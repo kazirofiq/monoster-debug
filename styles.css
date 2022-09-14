@@ -48,7 +48,7 @@ body {
 }
 
 #countdown {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
@@ -62,7 +62,7 @@ body {
   display: none;
 }
 #result {
-  position: fixed;
+  position: relative;
   top: 10%; 
   left: 10%;
   transform: translate(-50%, -50%);
@@ -74,6 +74,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
+  margin: 0 auto;
 }
 #show-time{
   text-align: center;
@@ -141,17 +142,29 @@ button {
   cursor: pointer;
 }
 
-#histories {
-  display: flex;
-  flex-wrap: wrap;
+            #histories {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3,1fr);
+  gap: 20px;
   justify-content: space-around;
 }
+@media screen and (max-width: 576px) {
+  #histories{
+      grid-template: repeat(1, 1fr)/repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width:992px ){
+  #histories{
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+}
+
 
 .card {
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
