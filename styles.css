@@ -52,7 +52,8 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8);
-  margin: 0 auto;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,8 +64,7 @@ body {
 #result {
   position: relative;
   top: 10%; 
-  left: 15%;
-  margin: 0 auto;
+  left: 10%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -74,7 +74,7 @@ body {
   color: white;
   text-align: center;
   padding: 2rem;
-  
+  margin: 0 auto;
 }
 #show-time{
   text-align: center;
