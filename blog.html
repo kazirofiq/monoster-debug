@@ -53,17 +53,14 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        what is different map() and foreach() filter() find() javaScript?
+                        How does the Event Loop works in JavaScript?
                       </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                       <div class="accordion-body">
-                        ed. <br> <br>
-                        .map():
-                        .map() executes the same code on every element in an array and returns a new array with the updated elements. <br> <br>
-                        .filter():
-                        .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria. <br> <br>
-                        .find() When you want to select a single element from an array.
+                        The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+
+                        Such an iteration is called a tick in the Event Loop. Each event is just a function callback
                       </div>
                     </div>
                     
